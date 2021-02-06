@@ -5,10 +5,6 @@ import lombok.*;
 import java.io.Serializable;
 
 @Data
-@Builder
-@Getter
-@AllArgsConstructor
-@EqualsAndHashCode
 public class DummyDto implements Serializable {
     private final String string1;
     private final String string2;
