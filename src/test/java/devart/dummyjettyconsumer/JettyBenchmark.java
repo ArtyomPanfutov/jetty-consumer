@@ -21,16 +21,6 @@ public class JettyBenchmark extends AbstractBenchmark {
         JettyBenchmark.service = dummyConsumerService;
     }
 
-    /*
-     * There is no @Test annotated method within here, because the AbstractBenchmark
-     * defines one, which spawns the JMH runner. This class only contains JMH/Benchmark
-     * related code.
-     */
-    @Setup(Level.Trial)
-    public void setupBenchmark() {
-
-    }
-
     @Benchmark
     public void getDummyDto() {
         DummyDto[] dummyDtos = service.get();
