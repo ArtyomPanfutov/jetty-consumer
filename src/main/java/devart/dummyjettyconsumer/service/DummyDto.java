@@ -1,4 +1,4 @@
-package devart.dummyjettyconsumer.rest;
+package devart.dummyjettyconsumer.service;
 
 import lombok.*;
 
